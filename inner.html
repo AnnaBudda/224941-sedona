@@ -9,10 +9,10 @@
       <!--header-->
       <header class="main-header">
         <nav class="main-navigation">
+          <a class="main-header-logo" href="#"><img src="http://placehold.it/150x100" width="150px" height="100px" alt="Город Седона, штат Аризона, США"></a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a class="main-header-logo" href="#"><img src="http://placehold.it/150x100" width="150px" height="100px" alt="Город Седона, штат Аризона, США"></a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
@@ -22,9 +22,10 @@
       <!--content-->
       <main>
         <h1 class="hidden">Поиск отелей</h1>
-        <h2 class="hidden">Форма поиска отелей</h2>
+
         <section class="filter-hotels">
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="hidden">Форма поиска отелей</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
                 <legend>Инфрастуктура:</legend>
                 <input type="checkbox" name="pool" id="check1" checked>
@@ -44,121 +45,84 @@
                 <label for="check6">Апартаменты</label>
               </fieldset>
               <fieldset>
+                <legend>Стоимость в сутки (р):</legend>
                 <input type="text" name="from" placeholder="От 0">
                 <input type="text" name="to" placeholder="До 3000">
                 <input type="range" min="0" max="3000" step="1">
               </fieldset>
-              <button type="submit" class="butto-formn">Показать</button>
+              <button type="submit" class="button-form">Показать</button>
           </form>
         </section>
+
         <section class="form-result">
+
           <article class="form-result-sort">
-            <h3>Найдено: 3</h3>
+            <p>Найдено: 3</p>
             <p>Сортировка:</p>
             <ul class="sort-form">
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По рейтингу</li>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
             </ul>
             <a href="#" class="triangle-up"></a>
             <a href="#" class="triangle-down"></a>
           </article>
+
           <article class="form-result-hotels">
-            <table>
-              <tbody>
-                <tr>
-                  <td rowspan="3">
-                    <img src="http://placehold.it/100x50" width="100" height="50" alt="Amara Resort &amp; Spa">
-                  </td>
-                  <td colspan="2">
-                    <h3>Amara Resort &amp; Spa</h3>
-                  </td>
-                  <td class="form-star-3" rowspan="2"></td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Гостиница</p>
-                  </td>
-                  <td>
-                    <p>От 3500 Р.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><a class="button-blue">Подробнее</a></p>
-                  </td>
-                  <td>
-                    <p><a class="button-brown">Забронировать</a></p>
-                  </td>
-                  <td>
-                    <p><a class="button-grey">Рейтинг: <strong>8,5</strong></a></p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td rowspan="3">
-                    <img src="http://placehold.it/100x50" width="100" height="50" alt="Desert Quail Inn">
-                  </td>
-                  <td colspan="2">
-                    <h3>Desert Quail Inn</h3>
-                  </td>
-                  <td class="form-star-3" rowspan="2"></td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Мотель</p>
-                  </td>
-                  <td>
-                    <p>От 2000 Р.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><a class="button-blue">Подробнее</a></p>
-                  </td>
-                  <td>
-                    <p><a class="button-brown">Забронировать</a></p>
-                  </td>
-                  <td>
-                    <p><a class="button-grey">Рейтинг: <strong>8,9</strong></a></p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td rowspan="3">
-                    <img src="http://placehold.it/100x50" width="100" height="50" alt="Villas At Poco Diablo">
-                  </td>
-                  <td colspan="2">
-                    <h3>Villas At Poco Diablo</h3>
-                  </td>
-                  <td class="form-star-3" rowspan="2"></td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Апартаменты</p>
-                  </td>
-                  <td>
-                    <p>От 4000 Р.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p><a class="button-blue">Подробнее</a></p>
-                  </td>
-                  <td>
-                    <p><a class="button-brown">Забронировать</a></p>
-                  </td>
-                  <td>
-                    <p><a class="button-grey">Рейтинг: <strong>9,2</strong></a></p>
-                  </td>
-                </tr>
-
-              </tbody>
-            </table>
+            <div class="form-result-hotels-photo">
+              <img src="http://placehold.it/100x50" width="100" height="50" alt="Amara Resort &amp; Spa">
+            </div>
+            <div class"form-result-hotels-info">
+              <h3>Amara Resort &amp; Spa</h3>
+              <p>Гостиница</p>
+              <p>От 3500 Р.</p>
+              <a class="form-result-hotels-button-blue">Подробнее</a>
+              <a class="form-result-hotels-button-brown">Забронировать</a>
+            </div>
+            <div class="form-result-hotels-stars">
+              <img src="http://placehold.it/100x50" width="100" height="50" alt="Amara Resort &amp; Spa 4*">
+              <p class="form-result-hotels-rating">Рейтинг: <strong>8,5</strong></p>
+            </div>
           </article>
+
+          <article class="form-result-hotels">
+            <div class="form-result-hotels-photo">
+              <img src="http://placehold.it/100x50" width="100" height="50" alt="Desert Quail Inn">
+            </div>
+            <div class"form-result-hotels-info">
+              <h3>Desert Quail Inn</h3>
+              <p>Мотель</p>
+              <p>От 2000 Р.</p>
+              <a class="form-result-hotels-button-blue">Подробнее</a>
+              <a class="form-result-hotels-button-brown">Забронировать</a>
+            </div>
+            <div class="form-result-hotels-stars">
+              <img src="http://placehold.it/100x50" width="100" height="50" alt="Desert Quail Inn 2*">
+              <p class="form-result-hotels-rating">Рейтинг: <strong>8,9</strong></p>
+            </div>
+          </article>
+
+          <article class="form-result-hotels">
+            <div class="form-result-hotels-photo">
+              <img src="http://placehold.it/100x50" width="100" height="50" alt="Villas At Poco Diablo">
+            </div>
+            <div class"form-result-hotels-info">
+              <h3>Villas At Poco Diablo</h3>
+              <p>Апартаменты</p>
+              <p>От 4000 Р.</p>
+              <a class="form-result-hotels-button-blue">Подробнее</a>
+              <a class="form-result-hotels-button-brown">Забронировать</a>
+            </div>
+            <div class="form-result-hotels-stars">
+              <img src="http://placehold.it/100x50" width="100" height="50" alt="Villas At Poco Diablo 3*">
+              <p class="form-result-hotels-rating">Рейтинг: <strong>9,2</strong></p>
+            </div>
+          </article>
+
         </section>
       </main>
       <!--content end-->
+
       <!--footer-->
       <footer class="main-footer">
 
@@ -166,15 +130,15 @@
 
         <div class="main-footer-social">
           <ul class="main-footer-list">
-            <li class="social-button tw">Twitter</li>
-            <li class="social-button fb">Facebook</li>
-            <li class="social-button youtube">Youtube</li>
+            <li class="social-button tw"><a href="#">Twitter</a></li>
+            <li class="social-button fb"><a href="#">Facebook</a></li>
+            <li class="social-button youtube"><a href="#">Youtube</a></li>
           </ul>
         </div>
 
         <div class="footer-copyright">
           <p>Website by</p>
-          <img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100px" alt="HTML Academy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100px" alt="HTML Academy"></a>
         </div>
 
       </footer>
