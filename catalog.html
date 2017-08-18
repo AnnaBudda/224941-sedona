@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <!--header-->
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="#"><img src="http://placehold.it/150x100" width="150px" height="100px" alt="Город Седона, штат Аризона, США"></a>
+          <a class="main-header-logo" href="#"><img src="img/logo.png" width="138px" height="70px" alt="Город Седона, штат Аризона, США"></a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <!--header end-->
       <!--content-->
-      <main>
-        <h1 class="hidden">Поиск отелей</h1>
+      <main class="main-content">
+        <h1 class="visually-hidden">Поиск отелей</h1>
 
         <section class="filter-hotels">
-          <h2 class="hidden">Форма поиска отелей</h2>
+          <h2 class="visually-hidden">Форма поиска отелей</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
                 <legend>Инфрастуктура:</legend>
@@ -54,23 +55,24 @@
           </form>
         </section>
 
-        <section class="form-result">
 
-          <article class="form-result-sort">
-            <p>Найдено: 3</p>
-            <p>Сортировка:</p>
-            <ul class="sort-form">
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По рейтингу</a></li>
-            </ul>
-            <a href="#" class="triangle-up"></a>
-            <a href="#" class="triangle-down"></a>
-          </article>
+        <section class="form-result-sort">
+          <p class="form-result-sort-title">Найдено: 3</p>
+          <p  class="form-result-sort-text">Сортировка:</p>
+          <ul class="sort-form">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          <a href="#" class="triangle-up"></a>
+          <a href="#" class="triangle-down"></a>
+        </section>
+
+        <section class="form-result">
 
           <article class="form-result-hotels">
             <div class="form-result-hotels-photo">
-              <img src="http://placehold.it/100x50" width="100" height="50" alt="Amara Resort &amp; Spa">
+              <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
             </div>
             <div class"form-result-hotels-info">
               <h3>Amara Resort &amp; Spa</h3>
@@ -80,14 +82,14 @@
               <a class="form-result-hotels-button-brown">Забронировать</a>
             </div>
             <div class="form-result-hotels-stars">
-              <img src="http://placehold.it/100x50" width="100" height="50" alt="Amara Resort &amp; Spa 4*">
+              <img src="img/stars4.png" width="89" height="17" alt="Amara Resort &amp; Spa 4*">
               <p class="form-result-hotels-rating">Рейтинг: <strong>8,5</strong></p>
             </div>
           </article>
 
           <article class="form-result-hotels">
             <div class="form-result-hotels-photo">
-              <img src="http://placehold.it/100x50" width="100" height="50" alt="Desert Quail Inn">
+              <img src="img/desert-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
             </div>
             <div class"form-result-hotels-info">
               <h3>Desert Quail Inn</h3>
@@ -97,14 +99,14 @@
               <a class="form-result-hotels-button-brown">Забронировать</a>
             </div>
             <div class="form-result-hotels-stars">
-              <img src="http://placehold.it/100x50" width="100" height="50" alt="Desert Quail Inn 2*">
+              <img src="img/stars2.png" width="41" height="17" alt="Desert Quail Inn 2*">
               <p class="form-result-hotels-rating">Рейтинг: <strong>8,9</strong></p>
             </div>
           </article>
 
           <article class="form-result-hotels">
             <div class="form-result-hotels-photo">
-              <img src="http://placehold.it/100x50" width="100" height="50" alt="Villas At Poco Diablo">
+              <img src="img/villa-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
             </div>
             <div class"form-result-hotels-info">
               <h3>Villas At Poco Diablo</h3>
@@ -114,7 +116,7 @@
               <a class="form-result-hotels-button-brown">Забронировать</a>
             </div>
             <div class="form-result-hotels-stars">
-              <img src="http://placehold.it/100x50" width="100" height="50" alt="Villas At Poco Diablo 3*">
+              <img src="img/stars3.png" width="65" height="17" alt="Villas At Poco Diablo 3*">
               <p class="form-result-hotels-rating">Рейтинг: <strong>9,2</strong></p>
             </div>
           </article>
@@ -138,7 +140,7 @@
 
         <div class="footer-copyright">
           <p>Website by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100px" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="footer-logo" src="img/logo-htmlacademy.png" width="115" height="41px" alt="HTML Academy"></a>
         </div>
 
       </footer>
