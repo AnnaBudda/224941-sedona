@@ -1,6 +1,6 @@
 body {
-  font-size: 14pt;
-  line-height: 21pt;
+  font-size: 14px;
+  line-height: 21px;
   color: #333333;
   font-weight: normal;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -9,22 +9,22 @@ body {
 }
 
 .main-content h1 {
-  font-size: 32pt;
-  line-height: 38pt;
+  font-size: 32px;
+  line-height: 38px;
   color: #000000;
   font-weight: bold;
 }
 
 .main-content h2 {
-  font-size: 30pt;
-  line-height: 36pt;
+  font-size: 30px;
+  line-height: 36px;
   color: #000000;
   font-weight: bold;
 }
 
 .main-content h3 {
-  font-size: 21pt;
-  line-height: 21pt;
+  font-size: 21px;
+  line-height: 21px;
   color: #000000;
   font-weight: bold;
 }
@@ -32,15 +32,15 @@ body {
 /* Footer */
 
 .main-footer-hashtag {
-  font-size: 21pt;
-  line-height: 21pt;
+  font-size: 21px;
+  line-height: 21px;
   color: #000000;
   font-weight: bold;
 }
 
 .footer-copyright-text {
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
   font-weight: normal;
 }
@@ -49,30 +49,30 @@ body {
 
 .site-navigation,
 .popup-form {
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
   font-weight: bold;
 }
 
 .features-header-title,
 .main-footer-hashtag {
-  font-size: 21pt;
-  line-height: 26pt;
+  font-size: 21px;
+  line-height: 26px;
   color: #000000;
   font-weight: bold;
 }
 
 .features-header-text {
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 14px;
+  line-height: 26px;
   color: #333333;
   font-weight: normal;
 }
 
 .features-content-title {
-  font-size: 21pt;
-  line-height: 21pt;
+  font-size: 21px;
+  line-height: 21px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -83,21 +83,21 @@ body {
 }
 
 .popup-search-text {
-  font-size: 14pt;
-  line-height: 24pt;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .button-popup-search {
-  font-size: 21pt;
-  line-height: 26pt;
+  font-size: 21px;
+  line-height: 26px;
   color: #ffffff;
   font-weight: bold;
 }
 
 .button-popup-search,
 .popup-search-btn {
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
   font-weight: bold;
 }
@@ -106,36 +106,36 @@ body {
 /* Catalog Page */
 
 .filter-hotels legend {
-  font-size: 16pt;
-  line-height: 21pt;
+  font-size: 16px;
+  line-height: 21px;
   color: #000000;
   font-weight: bold;
 }
 
 .form-result-sort-title {
-  font-size: 14pt;
-  line-height: 26pt;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
   font-weight: bold;
 }
 
 .form-result-sort-text {
-  font-size: 12pt;
-  line-height: 18pt;
+  font-size: 12px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
 }
 
 .sort-form {
-  font-size: 12pt;
-  line-height: 18pt;
+  font-size: 12px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   opacity: 0.3;
 }
 
 .form-result-hotels-info > h3 {
-  line-height: 26pt;
+  line-height: 26px;
 }
 
 .form-result-hotels-button-blue {
