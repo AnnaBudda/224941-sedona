@@ -11,10 +11,12 @@
       <!--header-->
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo"><img src="img/logo.png" width="138px" height="70px" alt="Город Седона, штат Аризона, США"></a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
+          </ul>
+          <a class="main-header-logo"><img src="img/logo.png" width="138px" height="70px" alt="Город Седона, штат Аризона, США"></a>
+          <ul class="site-navigation">
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
@@ -43,7 +45,7 @@
               <p class="features-content-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="features-image">
-              <img src="img/town-view.jpg" width="800px" height="401px" alt="Настоящий городок Седона">
+              <img src="img/town-view.jpg" width="800px" height="256px" alt="Настоящий городок Седона">
             </div>
           </div>
 
@@ -80,7 +82,7 @@
               <li class="features-item">
                 <h3>Небольшая площадь</h3>
                 <p class="number">№3</p>
-                <p>Все достопримечательности находятся очень близко</p>
+                <p>Все достопримеча-тельности находятся очень близко</p>
               </li>
               <li class="features-item">
                 <h3>Красивая дорога</h3>
@@ -98,25 +100,33 @@
         </section>
 
         <section class="popup-search">
-          <h2>Заинтересовались?</h2>
-          <p class="popup-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button-popup-search">Поиск гостиницы в Седоне</button>
+          <div clas="popup-search-header">
+            <h2>Заинтересовались?</h2>
+            <p class="popup-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button class="button-popup-search">Поиск гостиницы в Седоне</button>
+          </div>
           <div class="popup-form">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="date-in">Дата заезда:</label>
-            <input class="popup-form-input" type="date" id="date-in" placeholder="24 апреля 2017">
-            <a class="popup-form-link"><img src="img/calendar.svg"></a>
-            <label for="date-out">Дата выезда:</label>
-            <input class="popup-form-input" type="date" id="date-out" placeholder="4 июля 2017">
-            <a class="popup-form-link"><img src="img/calendar.svg"></a>
-            <label for="adults">Взрослые:</label>
-            <button class="popup-form-input popup-form-plus" type="button">Увеличить</button>
-            <input class="popup-form-input" type="number" id="adults" min="1" max="100" step="1" value="2">
-            <button class="popup-form-input popup-form-minus" type="button">Уменьшить</button>
-            <label for="children">Дети:</label>
-            <button class="popup-form-input popup-form-plus" type="button">Увеличить</button>
-            <input class="popup-form-input" type="number" id="children" min="0" max="100" step="1" value="0">
-            <button class="popup-form-input popup-form-minus" type="button">Уменьшить</button>
+            <p>
+              <label for="date-in">Дата заезда:</label>
+              <input class="popup-form-input" type="date" id="date-in" placeholder="24 апреля 2017">
+              <button type="button" class="popup-form-calendar"><img src="img/calendar.svg"></button>
+            </p>
+            <p>
+              <label for="date-out">Дата выезда:</label>
+              <input class="popup-form-input" type="date" id="date-out" placeholder="4 июля 2017">
+              <button type="button" class="popup-form-calendar"><img src="img/calendar.svg"></button>
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <button class="popup-form-input popup-form-plus" type="button">Увеличить</button>
+              <input class="popup-form-input" type="number" id="adults" min="1" max="100" step="1" value="2">
+              <button class="popup-form-input popup-form-minus" type="button">Уменьшить</button>
+              <label for="children">Дети:</label>
+              <button class="popup-form-input popup-form-plus" type="button">Увеличить</button>
+              <input class="popup-form-input" type="number" id="children" min="0" max="100" step="1" value="0">
+              <button class="popup-form-input popup-form-minus" type="button">Уменьшить</button>
+            </p>
             <button type="submit" class="popup-search-btn">Найти</button>
           </form>
         </div>
