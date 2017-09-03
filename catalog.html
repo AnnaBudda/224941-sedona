@@ -32,28 +32,43 @@
           <form class="filter-hotels-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
                 <legend>Инфрастуктура:</legend>
-                <input type="checkbox" name="pool" id="check1" checked>
-                <label for="check1">Бассейн</label>
-                <input type="checkbox" name="parking" id="check2">
-                <label for="check2">Парковка</label>
-                <input type="checkbox" name="wifi" id="check3">
-                <label for="check3">Wi-Fi</label>
+                <ul class="filter-hotels-form-option">
+                  <li>
+                    <input class="filter-hotels-form-checkbox visually-hidden" type="checkbox" name="pool" id="check1" checked>
+                    <label for="check1">Бассейн</label>
+                  </li>
+                  <li>
+                    <input class="filter-hotels-form-checkbox visually-hidden" type="checkbox" name="parking" id="check2">
+                    <label for="check2">Парковка</label>
+                  </li>
+                  <li>
+                    <input class="filter-hotels-form-checkbox visually-hidden" type="checkbox" name="wifi" id="check3">
+                    <label for="check3">Wi-Fi</label>
+                  </li>
+                </ul>
               </fieldset>
               <fieldset>
                 <legend>Тип жилья:</legend>
-                <input type="checkbox" name="hotel" id="check4" checked>
-                <label for="check4">Гостиница</label>
-                <input type="checkbox" name="motel" id="check5" checked>
-                <label for="check5">Мотель</label>
-                <input type="checkbox" name="apartments" id="check6" checked>
-                <label for="check6">Апартаменты</label>
+                <label for="check4"><input class="filter-hotels-form-checkbox visually-hidden" type="checkbox" name="hotel" id="check4" checked>Гостиница</label>
+                <label for="check5"><input class="filter-hotels-form-checkbox visually-hidden" type="checkbox" name="motel" id="check5" checked>Мотель</label>
+                <label for="check6"><input class="filter-hotels-form-checkbox visually-hidden" type="checkbox" name="apartments" id="check6" checked>Апартаменты</label>
               </fieldset>
-              <div>
+              <div class="filter-hotels-range">
               <fieldset>
                 <legend>Стоимость в сутки (р):</legend>
-                <input type="text" name="from" placeholder="От 0">
-                <input type="text" name="to" placeholder="До 3000">
-                <input type="range" min="0" max="3000" step="1">
+                <div class="filter-hotels-range-price-controls">
+                  <label class="min-price" for="min-price">от</label>
+                  <input type="text" id="min-price name="min-price" value="0">
+                  <label class="max-price" for="max-price">до</label>
+                  <input type="text" id="max-price" name="max-price" value="3000">
+                </div>
+                <div class="filter-hotels-range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
               </fieldset>
               <button type="submit" class="button-form">Показать</button>
             </div>
