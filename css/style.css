@@ -84,7 +84,7 @@ body {
 /* Header */
 
 .main-header {
-position: relative;
+/*position: relative;*/
 
 }
 
@@ -94,8 +94,8 @@ position: relative;
   align-items: center;
 
   width: 1200px;
-  min-height: 56px;
-  padding: 0 72px;
+  /*min-height: 56px;*/
+  /*padding: 0 72px;*/
   margin: 0;
 
 }
@@ -103,12 +103,12 @@ position: relative;
 .main-header-logo {
   width: 138px;
   height: 70px;
-  /*display: block;
-  position: absolute;*/
-  top: 0;
-  left: 532px;
+  /*display: block;*/
+  position: relative;
+    /*top: 0;
+  left: 532px;*/
 
-  z-index: 1;
+  z-index: 2;
   margin-left: auto;
   margin-right: auto;
 }
@@ -134,7 +134,13 @@ position: relative;
 }*/
 
 .site-navigation li {
+  box-sizing: border-box;
   width: 240px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .site-navigation a {
@@ -253,6 +259,7 @@ position: relative;
 
 .banner {
   margin-bottom: 55px;
+  position: relative;
 }
 
 .features-header {
