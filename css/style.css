@@ -136,7 +136,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }
 
 .site-navigation li {
@@ -327,7 +327,7 @@ body {
 .tw {
   fill: #ffffff;
   width: 17px;
-  height: 15px;  
+  height: 15px;
 }
 
 .fb {
@@ -590,7 +590,7 @@ li.features-item {
   text-align: center;
   margin: 0 auto;
   padding-top: 25px;
-  
+
   position: relative;
   z-index: 5;
 }
@@ -620,7 +620,7 @@ li.features-item {
 
   background-color: #766357;
   border: 0;
-  
+
   position: relative;
   z-index: 10;
 }
@@ -660,7 +660,7 @@ li.features-item {
 }
 
 .popup-form-active {
-  display: block;  
+  display: block;
   animation-duration: 0.75s;
   animation-timing-function: ease;
   animation-delay: 0s;
