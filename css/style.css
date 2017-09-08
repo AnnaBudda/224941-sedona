@@ -1112,7 +1112,8 @@ li.site-navigation-active a {
 
   font-size: 14px;
   line-height: 21px;
-  vertical-align: top;
+  vertical-align: center;
+  padding-top: 5px;
 
   cursor: pointer;
 }
