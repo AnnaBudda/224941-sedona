@@ -3,11 +3,5 @@ var popupform = document.querySelector(".popup-form");
 
 popup.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popupform.classList.add("popup-form-hidden");
+  popupform.classList.toggle("popup-form-hidden");
 });
-
-popup.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupform.classList.toggle("popup-form-active");
-});
-
