@@ -283,8 +283,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 156px;
-  height: 45px;
+  width: 156px;  
   margin-bottom: 17px;
   padding: 0;
   list-style: none;
@@ -623,6 +622,7 @@ li.features-item {
   color: rgba(255, 255, 255, 1);
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
   width: 568px;
   padding: 30px 0;
 
@@ -631,6 +631,7 @@ li.features-item {
 
   position: relative;
   z-index: 10;
+  display: block;
 }
 
 .button-popup-search:hover {
@@ -644,6 +645,69 @@ li.features-item {
   outline: none;
 }
 
+/*
+.popup-return {
+  -webkit-animation-name: return;
+          animation-name: return;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+*/
+
+.popup-return {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+/*
+@-webkit-keyframes return {
+  0%,
+  100% {
+    -webkit-transform: translateX(-284px);
+            transform: translateX(-284px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-264px);
+            transform: translateX(-264px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-304px);
+            transform: translateX(-304px);
+  }
+}
+*/
 .popup-form {
   font-size: 14px;
   line-height: 26px;
@@ -1070,6 +1134,11 @@ li.site-navigation-active a {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
+.filter-hotels-form-checkbox:focus + label {
+  cursor: pointer;
+  outline: inherit;
+}
+
 .filter-range {
   width: 33%;
   max-width: 320px;
@@ -1394,6 +1463,7 @@ a.sort-form-active {
   margin: 0;
   margin-right: 2px;
   margin-top: 6px;
+  vertical-align: center;
 }
 
 .form-result-hotels-button a {
@@ -1494,6 +1564,7 @@ a.form-result-hotels-button-brown:active {
   background-repeat: no-repeat;
   margin-bottom: 40px;
   padding: 0;
+  vertical-align: center;
 }
 
 .form-result-hotels-rating {
